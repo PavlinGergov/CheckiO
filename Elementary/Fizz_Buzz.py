@@ -12,8 +12,4 @@ def checkio(number):
         
     return answer
 
-if __name__ == '__main__':
-    print(checkio(15))
-    print(checkio(6))
-    print(checkio(5))
     

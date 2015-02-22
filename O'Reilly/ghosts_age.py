@@ -23,7 +23,5 @@ def checkio(opacity):
             current += 1
         i += 1
     return i - 1
-
-print(checkio(4000))
             
 

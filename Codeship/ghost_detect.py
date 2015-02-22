@@ -18,8 +18,6 @@ def recognize(number):
         return True
     else:
         return False
-print(recognize(3687))
-print(bin(3687))
 
 
 

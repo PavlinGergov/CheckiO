@@ -38,5 +38,3 @@ def checkio(text):
                 i += 1
 
     return counter
-print(checkio('my name is a'))
-#print(checkio("To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it?"))
