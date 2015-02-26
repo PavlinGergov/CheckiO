@@ -1,23 +1,24 @@
 def recognize(number):
-    s = False
-    ss = False
-    a = "{0:b}".format(number)
-    print(a)
-    b = (a.replace("0", " ")).split()
-    c = (a.replace("1", " ")).split()
-    for i,x in enumerate(b):
-        if i + 1 < len(b):
-            if x == b[i+1]:
-                s = True
+    is_true = False
+    binary_number = "{0:b}".format(number)
+    ones = (binary_number.replace("0", " ")).split()
+    for index,numb in enumerate(ones):
+        if index + 1 < len(ones):
+            if numb == ones[index+1]:
+                is_true = True
             else:
-                s = False
+                is_true = False
                 break
         else:
             break
-    if s:
+    if is_true:
         return True
     else:
         return False
+
+print(recognize(21))
+print(recognize(3687))
+
 
 
 
