@@ -1,9 +1,8 @@
-def checkio(data):
+def house_password(data):
+    
     is_lowercase = False
     is_uppercase = False
     is_number = False
-    is_length = False
-    is_strong = False
     
     for char in data:
         if char.islower():
@@ -14,9 +13,14 @@ def checkio(data):
             is_number = True
 
     if len(data) >= 10:
-        is_length = True
+        if is_lowercase and is_uppercase and is_number:
+            return True
+        else:
+            return False
+    else:
+        return False
+
+print(house_password('QwErTy911poqqqq'))
+print(house_password('123456123456'))
     
-    if is_lowercase and is_uppercase and is_number and is_length:
-        is_strong = True
-    
-    return is_strong
+

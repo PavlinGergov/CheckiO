@@ -1,4 +1,4 @@
-def checkio(data):
+def find_median(data):
     
     data_sorted = sorted(data)
     
@@ -10,3 +10,4 @@ def checkio(data):
     else:
         median = data_sorted[(len(data_sorted) // 2)]
         return median
+

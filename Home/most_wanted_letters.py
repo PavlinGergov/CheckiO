@@ -1,5 +1,5 @@
 import re
-def checkio(text):
+def find_letter(text):
     text = text.lower()
     text = re.sub('[.,;:!?]', ' ', text)
     info = {}
@@ -21,4 +21,4 @@ def checkio(text):
             letter = key
     return letter
 
-print(checkio("one"))
+print(find_letter("one"))
